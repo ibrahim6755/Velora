@@ -1,9 +1,7 @@
 import AnnouncementBar from "@/components/AnnouncementBar";
-import Hero from "@/components/Hero";
-import Navbar from "@/components/Navbar";
-import { ArrivalCards } from "@/data";
-import React from "react";
 import ArrivalCard from "@/components/ArrivalCard";
+import Hero from "@/components/Hero";
+import { ArrivalCards } from "@/data";
 
 const Home = () => {
   return (
@@ -54,7 +52,9 @@ const Home = () => {
       <section className="bg-white">
         <div className="relative bg-[url('/images/exclusive-jackets.jpg')] bg-cover bg-center w-full md:w-[75%] h-[500px] p-9 md:p-0 rounded-2xl">
           <div className="absolute bg-white p-8 rounded-2xl top-50 md:-right-18 md:top-40 md:w-[30%] flex flex-col items-start shadow-2xl">
-            <h1 className="text-black font-bold">The Exclusive Jackets - Starting at just $40</h1>
+            <h1 className="text-black font-bold">
+              The Exclusive Jackets - Starting at just $40
+            </h1>
             <p className="text-gray-600 text-xs my-8">
               Crafted for comfort, designed for impact — this is the outerwear
               piece thats redefining everyday style. Our best-selling jacket

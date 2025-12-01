@@ -9,7 +9,7 @@ interface Props {
   endingPrice: number;
   sizes: string[];
   colors: { name: string; value: string }[];
-  badge?: String;
+  badge?: string;
 }
 
 const ArrivalCard = ({
