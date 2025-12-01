@@ -3,6 +3,7 @@ import ArrivalCard from "@/components/ArrivalCard";
 import CountdownTimer from "@/components/CountdownTimer";
 import Hero from "@/components/Hero";
 import { ArrivalCards } from "@/data";
+import Image from "next/image";
 
 const Home = () => {
   return (
@@ -68,7 +69,7 @@ const Home = () => {
         </div>
       </section>
       {/* HURRY UP */}
-      <section className="bg-white py-10">
+      <section className="bg-white py-12">
         <div className="relative bg-[url('/images/hurryup.jpg')] p-4 md:p-0 flex items-center flex-col justify-center h-[600px] w-full bg-cover bg-center rounded-2xl ">
           <div className="absolute inset-0 bg-black/60" />
 
@@ -84,6 +85,120 @@ const Home = () => {
           <button className="z-50 uppercase bg-custom-red p-3 px-5 text-xs font-bold cursor-pointer rounded-3xl">
             shop the summer sale
           </button>
+        </div>
+      </section>
+      {/* HOW IT WORKS */}
+      <section className="bg-red-50 py-12 flex items-center justify-center flex-col">
+        <div className="md:mb-14 ">
+          <h1 className="text-black text-3xl font-extrabold text-center">
+            How It Works
+          </h1>
+          <p className="text-black text-center my-3 text-sm">
+            Just Pick, Pack and Ship
+          </p>
+        </div>
+        <div
+          className="bg-white rounded-2xl border border-gray-300 flex-col m-3 md:m-0
+         md:flex-row flex md:w-[65%] items-center justify-center my-12"
+        >
+          <div className="flex items-start p-5">
+            <Image
+              src={"/images/works-1.png"}
+              alt="image"
+              width={110}
+              height={24}
+            />
+            <div className="m-3">
+              <h1 className="text-sm text-black font-bold">Shop Styles</h1>
+              <p className="text-xs text-gray-600 my-2">
+                Browse our curated collections for Men, Women, Kids &
+                Accessories.
+              </p>
+            </div>
+          </div>
+          <div className="flex items-start p-5 border-l border-r border-gray-300">
+            <Image
+              src={"/images/works-2.png"}
+              alt="image"
+              width={100}
+              height={24}
+            />
+            <div className="m-3">
+              <h1 className="text-sm text-black font-bold">Pick Your Fit</h1>
+              <p className="text-xs text-gray-600 my-2">
+                Find your perfect size with our detailed fit guides and style
+                notes for every piece.
+              </p>
+            </div>
+          </div>
+          <div className="flex items-start p-5">
+            <Image
+              src={"/images/works-3.png"}
+              alt="image"
+              width={100}
+              height={24}
+            />
+            <div className="m-3">
+              <h1 className="text-sm text-black font-bold">Checkout Fast</h1>
+              <p className="text-xs text-gray-600 my-2">
+                Enjoy a quick and secure checkout experience with flexible
+                payment options.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* OFFER */}
+      <section className="bg-white flex flex-col items-center justify-center py-24">
+        <div className="my-12">
+          <h1 className="text-black text-3xl font-extrabold text-center">
+            Get 10% Off on Your First Order
+          </h1>
+          <p className="text-black text-center my-3 text-sm">
+            Plus exclusive access to product drops, style tips, and insider
+            deals.
+          </p>
+        </div>
+        <div className="mb-12">
+          <input
+            type="text"
+            placeholder="ENTER YOUR EMAIL"
+            className="placeholder:text-gray-400 text-sm outline p-3 md:mx-2 rounded w-full md:w-[330px]"
+          />
+          <button className="uppercase w-[90%] md:w-fit m-2 md:m-0 bg-custom-red p-4 px-6  text-xs font-bold cursor-pointer rounded-xl">
+            Subscribe
+          </button>
+        </div>
+        <div className="p-3 md:p-0 md:w-[65%] grid grid-cols-2 gap-4 md:grid-cols-4 ">
+          <Image
+            src={"/images/follow-1.png"}
+            alt="image"
+            width={200}
+            height={180}
+            className="rounded-2xl"
+          />
+          <Image
+            src={"/images/follow-2.png"}
+            alt="image"
+            width={200}
+            height={180}
+            className="rounded-2xl"
+          />
+          <Image
+            src={"/images/follow-3.png"}
+            alt="image"
+            width={200}
+            height={180}
+            className="rounded-2xl"
+          />
+          <Image
+            src={"/images/follow-4.png"}
+            alt="image"
+            width={200}
+            height={180}
+            className="rounded-2xl"
+          />
         </div>
       </section>
     </main>
