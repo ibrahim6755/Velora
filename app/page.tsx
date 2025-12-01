@@ -78,7 +78,7 @@ const Home = () => {
               Hurry Up! Get Up to 50% Off
             </h1>
             <h3 className="text-sm my-4 text-center text-white">
-              Step into summer with sun-ready styles at can't-miss prices.
+              Step into summer with sun-ready styles at cant-miss prices.
             </h3>
           </div>
           <CountdownTimer />
@@ -94,7 +94,7 @@ const Home = () => {
             How It Works
           </h1>
           <p className="text-black text-center my-3 text-sm">
-            Just Pick, Pack and Ship
+            Just Pick Pack and Ship
           </p>
         </div>
         <div
@@ -156,7 +156,7 @@ const Home = () => {
             Get 10% Off on Your First Order
           </h1>
           <p className="text-black text-center my-3 text-sm">
-            Plus exclusive access to product drops, style tips, and insider
+            Plus exclusive access to product drops, style tips and insider
             deals.
           </p>
         </div>
