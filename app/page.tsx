@@ -1,5 +1,6 @@
 import AnnouncementBar from "@/components/AnnouncementBar";
 import ArrivalCard from "@/components/ArrivalCard";
+import CountdownTimer from "@/components/CountdownTimer";
 import Hero from "@/components/Hero";
 import { ArrivalCards } from "@/data";
 
@@ -49,7 +50,7 @@ const Home = () => {
         </div>
       </section>
       {/* EXCLUSICE JACKET */}
-      <section className="bg-white">
+      <section className="bg-white ">
         <div className="relative bg-[url('/images/exclusive-jackets.jpg')] bg-cover bg-center w-full md:w-[75%] h-[500px] p-9 md:p-0 rounded-2xl">
           <div className="absolute bg-white p-8 rounded-2xl top-50 md:-right-18 md:top-40 md:w-[30%] flex flex-col items-start shadow-2xl">
             <h1 className="text-black font-bold">
@@ -64,6 +65,25 @@ const Home = () => {
               shop the exclusive jacket
             </button>
           </div>
+        </div>
+      </section>
+      {/* HURRY UP */}
+      <section className="bg-white py-10">
+        <div className="relative bg-[url('/images/hurryup.jpg')] p-4 md:p-0 flex items-center flex-col justify-center h-[600px] w-full bg-cover bg-center rounded-2xl ">
+          <div className="absolute inset-0 bg-black/60" />
+
+          <div className="z-50">
+            <h1 className="text-4xl text-white font-bold text-center">
+              Hurry Up! Get Up to 50% Off
+            </h1>
+            <h3 className="text-sm my-4 text-center text-white">
+              Step into summer with sun-ready styles at can't-miss prices.
+            </h3>
+          </div>
+          <CountdownTimer />
+          <button className="z-50 uppercase bg-custom-red p-3 px-5 text-xs font-bold cursor-pointer rounded-3xl">
+            shop the summer sale
+          </button>
         </div>
       </section>
     </main>
