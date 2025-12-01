@@ -58,8 +58,8 @@ const Home = () => {
               The Exclusive Jackets - Starting at just $40
             </h1>
             <p className="text-gray-600 text-xs my-8">
-              Crafted for comfort, designed for impact — this is the outerwear
-              piece thats redefining everyday style. Our best-selling jacket
+              Crafted for comfort, designed for impact  this is the outerwear
+              piece thats redefining everyday style. Our best selling jacket
               brings warmth, versatility, and edge to any outfit.
             </p>
             <button className="uppercase bg-custom-red p-3 px-3 text-xs font-bold cursor-pointer rounded-3xl">
@@ -78,7 +78,7 @@ const Home = () => {
               Hurry Up! Get Up to 50% Off
             </h1>
             <h3 className="text-sm my-4 text-center text-white">
-              Step into summer with sun-ready styles at cant-miss prices.
+              Step into summer with sun ready styles at cant miss prices.
             </h3>
           </div>
           <CountdownTimer />
@@ -156,7 +156,7 @@ const Home = () => {
             Get 10% Off on Your First Order
           </h1>
           <p className="text-black text-center my-3 text-sm">
-            Plus exclusive access to product drops, style tips and insider
+            Plus exclusive access to product drops style tips and insider
             deals.
           </p>
         </div>
