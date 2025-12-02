@@ -3,6 +3,7 @@ import ArrivalCard from "@/components/ArrivalCard";
 import CountdownTimer from "@/components/CountdownTimer";
 import Hero from "@/components/Hero";
 import { ArrivalCards } from "@/data";
+import { Instagram } from "lucide-react";
 import Image from "next/image";
 
 const Home = () => {
@@ -58,7 +59,7 @@ const Home = () => {
               The Exclusive Jackets - Starting at just $40
             </h1>
             <p className="text-gray-600 text-xs my-8">
-              Crafted for comfort, designed for impact  this is the outerwear
+              Crafted for comfort, designed for impact this is the outerwear
               piece thats redefining everyday style. Our best selling jacket
               brings warmth, versatility, and edge to any outfit.
             </p>
@@ -148,16 +149,14 @@ const Home = () => {
           </div>
         </div>
       </section>
-
-      {/* OFFER */}
+      {/* FOLLOW */}
       <section className="bg-white flex flex-col items-center justify-center py-24">
         <div className="my-12">
           <h1 className="text-black text-3xl font-extrabold text-center">
             Get 10% Off on Your First Order
           </h1>
           <p className="text-black text-center my-3 text-sm">
-            Plus exclusive access to product drops style tips and insider
-            deals.
+            Plus exclusive access to product drops style tips and insider deals.
           </p>
         </div>
         <div className="mb-12">
@@ -199,6 +198,66 @@ const Home = () => {
             height={180}
             className="rounded-2xl"
           />
+        </div>
+        <div className="flex items-center p-8 gap-3">
+          <Instagram size={20} className="text-custom-red" />
+          <h1 className="font-bold  text-black">Follow Us</h1>{" "}
+          <span className="text-xs text-gray-400">@VeloraStyle</span>
+        </div>
+      </section>
+      {/* SERVICES */}
+      <section className="bg-red-50 py-12 flex items-center justify-center">
+        <div className="max-w-5xl w-full px-4 grid grid-cols-1 md:grid-cols-4 gap-8">
+          <div className="flex flex-col items-center text-center h-full">
+            <Image
+              src={"/images/delivery1.png"}
+              width={60}
+              height={60}
+              alt="service"
+            />
+            <h1 className="font-bold text-black my-3 text-sm">
+              Free Standard Delivery
+            </h1>
+            <p className="text-xs text-gray-400">On all Orders Over $100</p>
+          </div>
+          <div className="flex flex-col items-center text-center h-full">
+            <Image
+              src={"/images/delivery2.png"}
+              width={60}
+              height={60}
+              alt="service"
+            />
+            <h1 className="font-bold text-black my-3 text-sm">
+              Quick Delivery
+            </h1>
+            <p className="text-xs text-gray-400">
+              Delivery within 3 Days across US
+            </p>
+          </div>
+          <div className="flex flex-col items-center text-center h-full">
+            <Image
+              src={"/images/securepayment.png"}
+              width={60}
+              height={60}
+              alt="service"
+            />
+            <h1 className="font-bold text-black my-3 text-sm">
+              Secure Payments
+            </h1>
+            <p className="text-xs text-gray-400">Secure Payment Methods</p>
+          </div>
+          <div className="flex flex-col items-center text-center h-full">
+            <Image
+              src={"/images/customerservice.png"}
+              width={60}
+              height={60}
+              alt="service"
+            />
+            <h1 className="font-bold text-black my-3 text-sm">
+              Top Rated Customer Service
+            </h1>
+            <p className="text-xs text-gray-400">Quick Responses & Solutions</p>
+          </div>
         </div>
       </section>
     </main>
